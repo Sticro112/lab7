@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Run LAB7",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/app",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "preLaunchTask": "Build LAB7"
+
+        }
+    ]
+}
