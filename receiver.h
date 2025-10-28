@@ -17,7 +17,7 @@ class Radioreceiver {
     private:
     static const size_t  SIZE_Struct = 4;
     static const size_t  SIZE_Data = 3;
-    std::vector<receiver_data> receivers[SIZE_Struct][SIZE_Data];
+    std::vector<receiver_data> receivers;
 
      void error() const {
         std::cout << "Error!!\n";
