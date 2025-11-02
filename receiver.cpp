@@ -5,9 +5,10 @@
 
 
 void Radioreceiver::input() {
-    for (size_t i = 0; i < SIZE_Struct; ++i) {
+    for (size_t i = 0; i < 4; ++i) {
+        receivers.push_back(receiver_data());
 
-        std::cout << "Working frequency: ";
+        std::cout << "Working frequency: " ;
         std::cin >> receivers[i].working_frequency;
         
         std::cout << " Sensitivity: ";
