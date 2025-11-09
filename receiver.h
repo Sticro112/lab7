@@ -15,8 +15,8 @@ struct receiver_data
 
 class Radioreceiver {
     private:
-    static const size_t  SIZE_Struct = 4;
     std::vector<receiver_data> receivers;
+    static const size_t  SIZE_Struct = 3;
 
      void error() const {
         std::cout << "Error!!\n";
@@ -36,6 +36,11 @@ class Radioreceiver {
 
     void input();
     void display();
+    void add(double freq, double sens, const std::string &mt);
+    void insert(size_t index, double freq, double sens, const std::string& mt);
+    void remove(size_t index);
+    void exchange(size_t i, size_t j);
+    void clear();
 
     ~Radioreceiver() {}
 };
